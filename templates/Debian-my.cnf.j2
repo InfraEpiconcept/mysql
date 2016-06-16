@@ -37,7 +37,7 @@ pid-file        = /var/run/mysqld/mysqld.pid
 socket          = /var/run/mysqld/mysqld.sock
 port            = {{ mysql_port }}
 basedir         = /usr
-datadir         = {{ mysql_datadir }}
+datadir         = /var/lib/mysql
 tmpdir          = /tmp
 lc-messages-dir = /usr/share/mysql
 skip-external-locking
@@ -74,10 +74,10 @@ query_cache_size        = 16M
 #
 # Error log - should be very few entries.
 #
-log_error = {{ mysql_log_error }}/logmysql/error.log
+log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
-log_slow_queries       = {{ mysql_log_slow_queries }}/log/mysql/mysql-slow.log
+#log_slow_queries       = /var/log/mysql/mysql-slow.log
 #long_query_time = 2
 #log-queries-not-using-indexes
 #
