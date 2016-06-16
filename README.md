@@ -1,8 +1,6 @@
 mysql
 ========
 
-[![Build Status](https://drone-opsdev.rax.io/github.com/rack-roles/mysql/status.svg?branch=master)](https://drone-opsdev.rax.io/github.com/rack-roles/mysql)
-
 This is a basic role to install and configure MySQL. This role does not manage any database imports or dumps. Please handle that outside of this role.
 
 Requirements
